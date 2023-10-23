@@ -1,47 +1,47 @@
 /* Define custom CSS variables for color values */
 :root {
-	
-	
-	
-	
-	
-	
+	--primary: #D81E5B;      /* Primary color */
+	--secondary: #8A4EFC;    /* Secondary color */
+	--light: #EEE;           /* Light background color */
+	--light-alt: #61759b;    /* Alternative light color */
+	--dark: #131A26;         /* Dark background color */
+	--dark-alt: #202B3E;     /* Alternative dark color */
 }
 
 /* Reset default margin, padding, and box-sizing for all elements */
 * {
-	
-	
-	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 
 	font-family: "Fira Sans", sans-serif; /* Set the default font */
 }
 
 /* Styling for the entire body of the page */
 body {
-	
-	
+	background-color: var(--dark-alt); /* Set background color */
+	color: var(--light);                /* Set text color */
 }
 
 /* Styling for the main container with class 'App' */
 .App {
-	
+	padding: 32px; /* Add padding around the content */
 }
 
 /* Styling for the top-level heading */
 h1 {
-	
-	
-	
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 32px;
 }
 
 /* Styling for subheading with class 'h4' */
 h4 {
-	
-	
-	
-	
-	
+	font-size: 18px;
+	color: var(--light-alt);     /* Set text color */
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 16px;
 }
 
 /* Styling for individual car elements */
@@ -221,8 +221,8 @@ h4 {
 	color: var(--dark);
 }
 
-/* Styling for the 'Sort cars by Speed' button */
-.sort-cars-by-speed-button {
+/* Styling for the 'Sort cars by Speed' and 'Sort cars by Year of Manufacture' button */
+.sort-cars-button {
 	background-color: var(--primary);
 	font-size: 18px;
 	font-weight: 500;
@@ -234,6 +234,7 @@ h4 {
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 	margin-bottom: 18px;
+	margin-left: 10px;
 }
 
 /* Hover effect for the 'Sort cars by Speed' button */
@@ -243,6 +244,14 @@ h4 {
 
 /* Styling for car speed information */
 .car .speed {
+    font-size: 14px;
+    color: var(--light-alt);
+	margin-left: 10px;
+    margin-top: 4px;
+}
+
+/* Styling for manufacture year information */
+.car .manufacture-year {
     font-size: 14px;
     color: var(--light-alt);
 	margin-left: 10px;

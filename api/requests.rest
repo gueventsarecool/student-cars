@@ -6,7 +6,8 @@ Content-Type: application/json
 
 {
     "carName": "BMW",
-    "speed": 150
+    "speed": 150,
+    "manufactureYear": 2010
 }
 
 ###
